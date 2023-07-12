@@ -10,11 +10,11 @@ CREATE TABLE plans(
     price REAL NOT NULL
 ) ENGINE = InnoDB;
 
-INSERT INTO plans (plan_id, plan_name, price) VALUES
-	('1', 'gratuito', 0),
-	('2', 'familiar', 7.99),
-	('3', 'universitário', 5.99),
-	('4', 'pessoal', 6.99);
+INSERT INTO plans (plan_name, price) VALUES
+	('gratuito', 0),
+	('familiar', 7.99),
+	('universitário', 5.99),
+	('pessoal', 6.99);
 
 CREATE TABLE users(
 	user_id INT PRIMARY KEY AUTO_INCREMENT,
